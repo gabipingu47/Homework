@@ -9,15 +9,18 @@ public class ex3 {
         int n = scanner.nextInt();
         int result = 0;
 
-        if (n > 0) {
-            int max = Integer.MIN_VALUE;
-            while (n > 0) {
-                int digit = n % 10;
-                max = Math.max(max, digit);
-                n /= 10;
-            }
-            result = max;
+        if (n < 0) {
+            n = n * (-1);
         }
-        System.out.println(result);
+        int max = Integer.MIN_VALUE;
+        while (n > 0) {
+            int digit = n % 10;
+            if (digit > max) {
+                max = digit;
+            }
+            n /= 10;
+        }
+        result = max;
     }
+        System.out.println(result);
 }
