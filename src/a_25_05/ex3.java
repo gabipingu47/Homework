@@ -22,5 +22,5 @@ public class ex3 {
         }
         result = max;
     }
-        System.out.println(result);
+        //System.out.println(result);
 }
