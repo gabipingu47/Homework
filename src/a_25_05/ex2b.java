@@ -1,4 +1,4 @@
-package a_25_05;
+package week1;
 
 public class ex2b {
     public static void main(String[] args) {
